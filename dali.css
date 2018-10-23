@@ -14,12 +14,12 @@ div h1 {
 	color: white;
 }
 
-.contenedor {
+/*.contenedor {
 	width: 800px;
 	margin: auto;
 	display: flex;
 	justify-content: center;
-}
+}*/
 
 .paint {
 	margin-bottom: 40px;
@@ -27,3 +27,54 @@ div h1 {
 	border-radius: 10px;
 }
 
+img {
+	transition: 1s;
+	opacity: 0;
+	/*Esta propiedad object-fit: hace que al cambiar el tamaño 
+	de la imágen arbitrariamente tome la mejor disposición
+	y trate de no desformarse al máximo*/  
+	object-fit: cover;
+	width: 100%;
+}
+
+img.b-loaded{
+	opacity: 1;
+}
+
+figure {
+	background-image: url('images/Spinner.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+@media screen and (max-width:1000px){
+	.a {
+		font-size: 65px;
+	}
+  }
+
+@media screen and (max-width:850px){
+	.a {
+		font-size: 60px;
+	}
+  }
+
+@media screen and (max-width:775px){
+	.a {
+		font-size: 55px;
+	}
+  }
+
+@media screen and (max-width:580px){
+	.a {
+		font-size: 40px;
+	}
+  }
+
+@media screen and (max-width:470px){
+	.a {
+		font-size: 30px;
+	}
+  }
