@@ -35,13 +35,21 @@ img {
 	y trate de no desformarse al máximo*/  
 	object-fit: cover;
 	width: 100%;
+	/*Para Que la imagen entre por el lado izquierdo. En su canvas
+	que en este caso es FIGURE se debe ocultar lo que se sale de él
+	para poder dar el efecto (overflow: hidden;) 
+	y en img.b-loaded ponemos left: 0*/
+	position: relative;
+	left: -40%;
 }
 
 img.b-loaded{
+	left: 0;
 	opacity: 1;
 }
 
 figure {
+	overflow: hidden;
 	background-image: url('images/Spinner.gif');
 	background-repeat: no-repeat;
 	background-position: center;
